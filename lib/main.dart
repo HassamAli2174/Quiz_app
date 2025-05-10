@@ -13,10 +13,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Quiz App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: MyHomePage(color: [Colors.deepPurple, Colors.amber]),
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.deepPurple, Colors.amber],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomLeft,
+            ),
+          ),
+          child: MyHomePage(),
+        ),
+      ),
     );
   }
 }
