@@ -1,4 +1,4 @@
-import 'package:adv_basic_quiz_app/home_page.dart';
+import 'package:adv_basic_quiz_app/quiz.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,24 +11,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Quiz App',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Colors.deepPurple, Colors.amber],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomLeft,
-            ),
-          ),
-          child: MyHomePage(),
-        ),
-      ),
-    );
+    return Quiz();
   }
 }

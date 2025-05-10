@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+  const MyHomePage(this.startQuiz, {super.key});
 
+  final void Function() startQuiz;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -11,8 +12,8 @@ class MyHomePage extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/quiz-logo.png',
-            width: 200,
-            color: Colors.white,
+            width: 300,
+            color: const Color.fromARGB(150, 255, 255, 255),
           ),
           SizedBox(height: 20),
           Text(
@@ -21,9 +22,7 @@ class MyHomePage extends StatelessWidget {
           ),
           SizedBox(height: 20),
           OutlinedButton.icon(
-            onPressed: () {
-              //
-            },
+            onPressed: startQuiz,
             style: OutlinedButton.styleFrom(
               backgroundColor: const Color.fromRGBO(255, 193, 7, 1),
               foregroundColor: Colors.purple,
