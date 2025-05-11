@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage(this.startQuiz, {super.key});
@@ -18,7 +19,7 @@ class MyHomePage extends StatelessWidget {
           SizedBox(height: 20),
           Text(
             'Learn Flutter The Fun Way',
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            style: GoogleFonts.lato(fontSize: 20, color: Colors.white),
           ),
           SizedBox(height: 20),
           OutlinedButton.icon(
@@ -31,7 +32,7 @@ class MyHomePage extends StatelessWidget {
             icon: Icon(Icons.arrow_right_alt_outlined, color: Colors.black),
             label: Text(
               'Start Quiz',
-              style: TextStyle(fontSize: 15, color: Colors.black),
+              style: GoogleFonts.lato(fontSize: 15, color: Colors.black),
             ),
           ),
         ],
