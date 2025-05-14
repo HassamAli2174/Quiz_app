@@ -14,8 +14,12 @@ A simple Flutter quiz application where users can answer Flutter-related multipl
 
 | Quiz Screen | Main Screen | Result Screen |
 |-------------|----------------|
-| ![image](https://github.com/user-attachments/assets/213165b0-9c0e-4060-bcb3-c87bbf7b7c44) |  ![image](https://github.com/user-attachments/assets/136808bf-3aa0-4652-be49-f405a239a2f7)
-  | ![image](https://github.com/user-attachments/assets/3763ac6a-7801-4bc2-bfa7-d97b30f75417)  |
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/213165b0-9c0e-4060-bcb3-c87bbf7b7c44) ![image](https://github.com/user-attachments/assets/136808bf-3aa0-4652-be49-f405a239a2f7) ![image](https://github.com/user-attachments/assets/3763ac6a-7801-4bc2-bfa7-d97b30f75417) 
 
 ## 🛠️ Getting Started
 
