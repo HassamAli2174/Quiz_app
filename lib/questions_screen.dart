@@ -49,11 +49,14 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             //const morenum= [[num,4]------[[1,2,3],4]
             //const morenum = [[...num,2]------[1,2,3,4]
             ...currentQuestion.getShuffledAnswer().map((ans) {
-              return AnswerButton(
-                answerText: ans,
-                onTap: () {
-                  answerQuestion(ans);
-                },
+              return Padding(
+                padding: const EdgeInsets.symmetric(vertical: 2),
+                child: AnswerButton(
+                  answerText: ans,
+                  onTap: () {
+                    answerQuestion(ans);
+                  },
+                ),
               );
             }),
             // AnswerButton(onTap: () {}, answerText: currentQuestion.answer[0]),
